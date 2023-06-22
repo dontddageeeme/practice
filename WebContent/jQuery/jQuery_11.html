@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script src = "../js/jquery.js"></script>
+<script>
+
+$(document).ready(function(){
+   $('#peaBtn').click(function(){
+      $('#peach').show().fadeOut("slow").slideDown("slow");   //여러개의 jQuery함수를 한줄로 나열해서 해당요소를 보이게 하고 사라지게 하고 밀어내린다. 
+                                                //한줄로 나열&구분해서 3개의 기능을 한번에 적용 -> 메서드 체이닝 방법
+   });
+});
+
+</script>
+</head>
+<body>
+
+   <input type="button" id="peaBtn" value="메서드채이닝">
+   <hr>
+   <img id = "peach" src = "../images/peach.jpg" width = "250" height = "230" style = "display : none;">
+   
+</body>
+</html>

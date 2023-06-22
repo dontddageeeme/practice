@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script src = "../js/jquery.js"></script>
+</head>
+<body>
+<input type = "button" id = "apple" value = "Show Apple"><hr>
+<img id="apple_Image" src="../images/img.jpg" width="250" height="230" style = "display : none;">
+<script>
+$(document).ready(function(){
+	$("#apple").click(function(){
+		$('#apple_Image').toggle(); //jQuery toggle() 함수는 해당 영역이 숨겨져 있으면 보이게 하고, 보이고 있으면 숨긴다
+	});
+});
+</script>
+</body>
+</html>

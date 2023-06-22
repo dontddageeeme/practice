@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+
+<script src = "../js/jquery.js"></script>
+<script>
+	$(document).ready(function(){
+		$("slideDown").click(function(){
+			$("#dog01").slideDown("slow"); //jQuery slideDown() 함수로 해당요소를 천천히 밀어내린다.
+		});
+		
+		$("#slideUp").click(function(){
+			$('#dog01').slideUp("slow");   //jQuery slideDown() 함수로 해당요소를 천천히 밀어올린다.
+		})
+	});
+</script>
+</head>
+<body>
+<img id = "dog01" src = "../images/dog.jpg" width="200" height="180"style = "position: relative;position: relative;">
+<hr>
+<button id = "slideDown" type="button">slideDown()</button>
+<button id = "slideUp" type="button">slideUp()</button>
+</body>
+</html>

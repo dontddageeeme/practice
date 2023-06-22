@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script src = "../js/jquery.js"></script>
+<script>
+
+$(document).ready(function(){
+   $("#text").click(function(){
+      $("#result").text("반갑습니다! 로 문자가 변경");   //jQuery text()함수에 인자값이 있으면 해당요소의 문자를 변경적용
+   });
+   $("#html").click(function(){
+      $("#result").html("<b>문자를 진하게 변경적용</b>");   //jQuery html()함수에 문자와 태그인자값이 있다면, 해당 요소에 문자와 태그를 함께 변경적용
+   });
+});
+
+</script>
+</head>
+<body>
+
+   <p id="result">여기에 변경적용</p>
+   <button type="button" id="text" >text()</button>
+   <button type="button" id="html" >html()</button>
+   <input type="button" id="html01" value="html()">
+   
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script src = "../js/jquery.js"></script>
+<script>
+
+$(document).ready(function(){
+      $('.addr_Btn').click(function() {
+         alert($('#addr').val());   //jQuery val()함수에 인자값이 없다면 해당입력필드의 입력값을 반환한다.
+   });
+});
+
+</script>
+</head>
+<body>
+
+<form>
+<!-- 
+   1. form태그에서 method속성을 생략하면 get방식이다.
+   2. get방식의 특징 ↓
+      1- 웹주소창에 자료가 노출된다. 노출되는 형식은 서버파일명?파라미터이름=값 형태로 자료전송 
+      2- 자료가 노출되니 보안이 좋지않고, 서버로 보내는 자료길이 제한 발생
+      
+   문제) 지금소스는 alert()경고창을 띄운다움 주소창에 ?형태의 get방식의 자료노출되는 쿼리스트링방식의 효과문제가 발생한다.
+       이 분제를 클릭이벤트 발생이후 자바스크립트 추가코드를 해서 문제해결을 해보자
+ -->
+   주소: <input type="Text" id="addr" size="24">
+  	  <button type="submit" id="addr_Btn" >val()</button>
+</form>
+
+</body>
+</html>

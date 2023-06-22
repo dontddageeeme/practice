@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+
+<script src = "../js/jquery.js"></script>
+<script>
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("#dog").animate({
+				left:"500px" /*왼쪽에서 오른쪽으로 500픽셀만큼 이동시킴*/
+			});
+		});
+	});
+</script>
+</head>
+<body>
+<img id = "dog" src = "../images/dog.jpg" width="300" height="250" alt= "강아지" style = "position: relative;">
+<!-- position:relative; css는 상대적 위치 정 -->
+<hr>
+<button type="button">animate()함수</button>
+<!-- button태그의 type속성의 기본값은 submit이다. 즉 type속성을 생략하면 submit이다. type속성에 3가지 값을 지정가능하다. submit,reset,button이다. -->
+</body>
+</html>

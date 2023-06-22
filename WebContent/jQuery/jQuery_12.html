@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script src = "../js/jquery.js"></script>
+<script>
+
+$(document).ready(function(){
+   $('#text01').click(function(){
+      alert($("#target").text());   //jQuery text()함수에 인자값이 없으면 해당요소의 문자를 반환
+   });
+   $('#html01').click(function(){
+      alert($("#target").html());   //jQuery html()함수에 인자값이 있다면 해당요소의 문자와 태그를 반환
+   });
+});
+
+</script>
+</head>
+<body>
+
+   <p id="target">이것은<strong>하나의</strong> 단락입니다.</p>
+   <button type="button" id="text01" >text()</button>
+   <input type="button" id="html01" value="html()">
+   
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+
+<script src = "../js/jquery.js"></script>
+
+</head>
+<body>
+
+<button type = "button" id = "btn01">show Image</button>
+<hr>
+<img id = "st" src = "../images/strawbarry.jpg" width="150" height="120" style = "display:none;"> <!-- display:none; css는 해당 이미지를 안보이게 하고, 자리도 차지하지 않는다. -->
+<script>
+	$(document).ready(function(){
+		$("#btn01").click(function(){	//btn01 버튼 클릭이벤트가 발생했을때 실행
+			$('#st').show('slow'); //jQuery show()함수로 해당 이미지를 천천히 보이게 한다.
+		});
+	});
+</script>
+</body>
+</html>

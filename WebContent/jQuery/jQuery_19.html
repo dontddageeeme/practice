@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script src = "../js/jquery.js"></script>
+<style>
+p{
+	background-color: yellow;
+}
+.contaniner{
+	width:200px; height:200px; border:1px dotted red;  /* 테두리 선두께를 1픽셀, 점선, 테두리 선색을 빨강으로*/
+}
+</style>
+<script>
+	$(document).ready(function(){
+		$("#btn01").click(function(){
+			$('.container').remove(); //remove() jQuery함수는 선택된 요소와 그 자식 요소를 모두 삭제
+		});
+	});
+	
+	$(document).ready(function(){
+		$('#btn02').click(function(){
+			$('.container').empty(); //empty() jQuery함수는 선택된 요소의 자식 요소를 삭제
+		});
+	});
+	
+</script>
+</head>
+<body>
+<input type = "button" id = "btn01" value = "remove()">
+<button type = "button" class = "btn02">empty()</button>
+<hr>
+<div class = "container">
+	<p>Hello</p>
+	<p>GoodBye</p>
+</div>
+</body>
+</html>
